@@ -1,0 +1,11 @@
+#基础url
+base_url: http://center-apis-test.yaodouwang.com
+#日志的配置
+log:
+  log_level: DEBUG
+  log_file_name: /logs_
+  sh_level: INFO
+  fh_level: INFO
+
+#密钥
+password: 5534CB9D41C52796B760D2270CA6FB2B

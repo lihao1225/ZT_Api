@@ -1,0 +1,10 @@
+INFO     /logs_:logger_util.py:20 -----------------接口测试开始----------------
+INFO     /logs_:logger_util.py:20 接口名称：拉取发票定时任务接口
+INFO     /logs_:logger_util.py:20 接口请求方式：get
+INFO     /logs_:logger_util.py:20 请求路径：http://center-apis-test.yaodouwang.com/md_erp_stream_provider/task/selectFphzOrder
+INFO     /logs_:logger_util.py:20 请求headers参数：{'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkZFVzZXJJZCI6IjE1NDUwNjI5MDg4NDc4MzUiLCJ1c2VySWQiOiIxNTA0MzUzMTY0MzcwNzgwMTYyIiwiaWF0IjoxNjU2NDkxNTU1LCJleHAiOjE2NTkwODM1NTUsIm5iZiI6MTY1NjQ5MTU1NX0.odLirZ3VmTDvZzgFdn6fTAGzHMhC9VpaM37n5xsYaaM'}
+INFO     /logs_:logger_util.py:20 预期结果：[{'codes': {'status_code': 200}}, {'contains': '成功'}]
+INFO     /logs_:logger_util.py:20 实际结果:{'code': '000000', 'data': '', 'message': '成功'}
+INFO     /logs_:logger_util.py:20 断言成功
+INFO     /logs_:logger_util.py:20 接口测试成功
+INFO     /logs_:logger_util.py:20 ----------------接口测试结束------------------

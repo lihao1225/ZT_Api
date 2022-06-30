@@ -1,0 +1,11 @@
+-
+  name: 推送采购票折数据到U8C
+  request:
+    method: get
+    base_url: ${read_config(base_url)}
+    url: /md_order/order/u8c/task/sendPurchaseoZkYfd
+    headers:
+      Authorization: ${read_extract(access_token)}
+  validate:
+    - codes: {status_code: 200}
+    - contains: 成功

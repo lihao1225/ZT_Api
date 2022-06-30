@@ -1,0 +1,102 @@
+{
+  "uid" : "3854a77781170c38",
+  "name" : "推送采购票折数据到U8C",
+  "fullName" : "test_cases.test_api.Test_Md#test_push_u8c_purchasing_ticket_discount",
+  "historyId" : "19f5aa8c2d42128aaf2c5f706a48832c",
+  "time" : {
+    "start" : 1656491558573,
+    "stop" : 1656491558766,
+    "duration" : 193
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_extract",
+    "time" : {
+      "start" : 1656491554447,
+      "stop" : 1656491554448,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bacb8101433a5d1b",
+      "name" : "log",
+      "source" : "bacb8101433a5d1b.txt",
+      "type" : "text/plain",
+      "size" : 1058
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "推送批发采购票折数据到U8C接口"
+  }, {
+    "name" : "feature",
+    "value" : "md_erp_stream_provider(批发业务拉取服务)"
+  }, {
+    "name" : "epic",
+    "value" : "业务中台-从erp拉取数据到中台数据库相关接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_api"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Md"
+  }, {
+    "name" : "host",
+    "value" : "huihuilinadeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "35314-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.test_api"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "{'name': '推送采购票折数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/sendPurchaseoZkYfd', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3854a77781170c38.json",
+  "parameterValues" : [ "{'name': '推送采购票折数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/sendPurchaseoZkYfd', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+}

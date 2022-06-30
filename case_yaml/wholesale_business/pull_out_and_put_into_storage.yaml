@@ -1,0 +1,14 @@
+-
+  name: $ddt{name}
+  request:
+    method: get
+    base_url: ${read_config(base_url)}
+    url: /md_erp_stream_provider/task/selectJxhzOrder
+    headers:
+      Authorization: ${read_extract(access_token)}
+  validate:
+    - codes: {status_code: 200}
+    - contains: $ddt{assert_str}
+  parameterize:
+    - ['name','assert_str']
+    - ['拉取进销数据接口','成功']

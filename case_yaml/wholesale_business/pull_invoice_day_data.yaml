@@ -1,0 +1,18 @@
+-
+  name: $ddt{name}
+  request:
+    method: get
+    base_url: ${read_config(base_url)}
+    url: /md_erp_stream_provider/task/centerFpV
+    headers:
+      Authorization: ${read_extract(access_token)}
+    params:
+      beginDate: $ddt{beginDate}
+      endDate: $ddt{endDate}
+      status: $ddt{status}
+  validate:
+    - codes: {status_code: 200}
+    - contains: $ddt{assert_str}
+  parameterize:
+    - ['name','beginDate','endDate','status','assert_str']
+    - ['按日期拉取销售订单数据','2022-06-27','2022-06-27','是','成功']

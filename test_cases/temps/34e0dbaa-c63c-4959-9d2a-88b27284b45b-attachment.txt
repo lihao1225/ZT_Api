@@ -1,0 +1,23 @@
+INFO     /logs_:logger_util.py:20 -----------------接口测试开始----------------
+INFO     /logs_:logger_util.py:20 接口名称：推送采购票折数据到U8C
+INFO     /logs_:logger_util.py:20 接口请求方式：get
+INFO     /logs_:logger_util.py:20 请求路径：http://center-apis-test.yaodouwang.com/md_order/order/u8c/task/sendPurchaseoZkYfd
+ERROR    /logs_:logger_util.py:16 数据替换错误：Traceback (most recent call last):
+  File "/Users/huihuilina/PycharmProjects/api_demo1/common/request_util.py", line 151, in replace_get_value
+    new_value = getattr(self.obj, function_name)(*all_args_value)
+  File "/Users/huihuilina/PycharmProjects/api_demo1/hotloads/debug_talk.py", line 23, in read_extract
+    return result[key]
+TypeError: 'NoneType' object is not subscriptable
+
+ERROR    /logs_:logger_util.py:16 发送请求报错：Traceback (most recent call last):
+  File "/Users/huihuilina/PycharmProjects/api_demo1/common/request_util.py", line 115, in send_all_request
+    kwargs[key] = self.replace_get_value(value)
+  File "/Users/huihuilina/PycharmProjects/api_demo1/common/request_util.py", line 170, in replace_get_value
+    raise e
+  File "/Users/huihuilina/PycharmProjects/api_demo1/common/request_util.py", line 151, in replace_get_value
+    new_value = getattr(self.obj, function_name)(*all_args_value)
+  File "/Users/huihuilina/PycharmProjects/api_demo1/hotloads/debug_talk.py", line 23, in read_extract
+    return result[key]
+TypeError: 'NoneType' object is not subscriptable
+
+ERROR    /logs_:logger_util.py:16 标准化测试用例报错<module 'traceback' from '/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/traceback.py'>

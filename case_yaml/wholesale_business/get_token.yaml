@@ -1,0 +1,21 @@
+-
+  name: $ddt{name}
+  request:
+    method: post
+    base_url: ${read_config(base_url)}
+    url: /md_user/mdLogin/getUserByMobile
+    headers: null
+    json:
+      mobileNumber: $ddt{mobileNumber}
+      password: $ddt{password}
+  extract:
+    access_token: '"token":"(.*?)"'
+  validate:
+    - codes: {status_code: 200}
+    - contains: $ddt{assert_str}
+  parameterize:
+    - ['name','mobileNumber','password','assert_str']
+    - [ '成功登录','13810752514','ydw@123','成功' ]
+
+
+

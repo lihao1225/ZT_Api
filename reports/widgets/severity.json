@@ -1,0 +1,201 @@
+[ {
+  "uid" : "40f5b046557bffe0",
+  "name" : "按日期拉取销售订单数据",
+  "time" : {
+    "start" : 1656491558268,
+    "stop" : 1656491558570,
+    "duration" : 302
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a8952f5c232bf685",
+  "name" : "推送采购出库数据到U8C",
+  "time" : {
+    "start" : 1656491558770,
+    "stop" : 1656491559812,
+    "duration" : 1042
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b941359574d18c13",
+  "name" : "拉取销售订单数据接口",
+  "time" : {
+    "start" : 1656491556459,
+    "stop" : 1656491556703,
+    "duration" : 244
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "eb490ae24b853ea6",
+  "name" : "推送采购发票数据到U8C",
+  "time" : {
+    "start" : 1656491570365,
+    "stop" : 1656491570460,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "347878a26b3551b4",
+  "name" : "推送采购入库数据到U8C",
+  "time" : {
+    "start" : 1656491559815,
+    "stop" : 1656491561836,
+    "duration" : 2021
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "3854a77781170c38",
+  "name" : "推送采购票折数据到U8C",
+  "time" : {
+    "start" : 1656491558573,
+    "stop" : 1656491558766,
+    "duration" : 193
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1446fb69c6f4c79d",
+  "name" : "按照日期拉取erp采购单数据",
+  "time" : {
+    "start" : 1656491556706,
+    "stop" : 1656491556937,
+    "duration" : 231
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b3a3004d044de759",
+  "name" : "推送销售出库X12和X31凭证数据到U8C",
+  "time" : {
+    "start" : 1656491562736,
+    "stop" : 1656491570094,
+    "duration" : 7358
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ec370f176b9d1598",
+  "name" : "推送销售入库X24和X41凭证数据到U8C",
+  "time" : {
+    "start" : 1656491570097,
+    "stop" : 1656491570257,
+    "duration" : 160
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "70a9e453ffeb41e",
+  "name" : "按日期拉取销售订单数据",
+  "time" : {
+    "start" : 1656491557509,
+    "stop" : 1656491558265,
+    "duration" : 756
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b75643f930f0ce36",
+  "name" : "推送销售出库X31数据到U8C",
+  "time" : {
+    "start" : 1656491562265,
+    "stop" : 1656491562561,
+    "duration" : 296
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "62a72a8b5894de90",
+  "name" : "拉取发票定时任务接口",
+  "time" : {
+    "start" : 1656491555234,
+    "stop" : 1656491555692,
+    "duration" : 458
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d8ae124f3970f116",
+  "name" : "推送销售入库X24数据到U8C",
+  "time" : {
+    "start" : 1656491562084,
+    "stop" : 1656491562262,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5c3367bf84ddd105",
+  "name" : "推送销售发票数据到U8C",
+  "time" : {
+    "start" : 1656491570260,
+    "stop" : 1656491570362,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e7eb3390082072ad",
+  "name" : "推送销售出库X12数据到U8C",
+  "time" : {
+    "start" : 1656491561839,
+    "stop" : 1656491562081,
+    "duration" : 242
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c983c70c58a62446",
+  "name" : "成功登录",
+  "time" : {
+    "start" : 1656491554450,
+    "stop" : 1656491555232,
+    "duration" : 782
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8a8052da741c7d77",
+  "name" : "从erp拉取采购数据到中台接口",
+  "time" : {
+    "start" : 1656491555695,
+    "stop" : 1656491556213,
+    "duration" : 518
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7f54c0d9bb0ec016",
+  "name" : "按日拉取采购/销售出入库数据",
+  "time" : {
+    "start" : 1656491556939,
+    "stop" : 1656491557506,
+    "duration" : 567
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "aaf805fe39656fbb",
+  "name" : "拉取进销数据接口",
+  "time" : {
+    "start" : 1656491556216,
+    "stop" : 1656491556457,
+    "duration" : 241
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7739aeeaa33ffbea",
+  "name" : "推送销售入库X41数据到U8C",
+  "time" : {
+    "start" : 1656491562564,
+    "stop" : 1656491562733,
+    "duration" : 169
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

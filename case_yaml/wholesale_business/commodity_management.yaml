@@ -1,0 +1,26 @@
+-
+  name: 商品管理
+  request:
+    method: get
+    base_url: ${read_config(base_url)}
+    url: /md_product/product/list?
+    headers:
+      Authorization: ${read_extract(access_token)}
+    params:
+      current: 1
+      size: 20
+      commodityFlag:
+      commodityBarCode:
+      commodityCategory:
+      commodityCodeOrApprovalNumber:
+      commodityCurrencyNameOrMnemonicCode:
+      commodityPictureUrl:
+      commodityStatus:
+      createTime:
+      dosageForm:
+      manufacturer:
+      updateTime:
+      total: 0
+  validate:
+    - codes: { status_code: 200 }
+    - contains: 成功

@@ -1,0 +1,17 @@
+-
+  name: $ddt{name}
+  request:
+    method: get
+    base_url: ${read_config(base_url)}
+    url: /md_erp_stream_provider/task/unitPurchaseOrder
+    headers:
+      Authorization: ${read_extract(access_token)}
+    params:
+      beginDate: $ddt{beginDate}
+      endDate: $ddt{endDate}
+  validate:
+    - codes: {status_code: 200}
+    - contains: $ddt{assert_str}
+  parameterize:
+    - ['name','beginDate','endDate','assert_str']
+    - ['按照日期拉取erp采购单数据','2022-06-15','2022-06-15','成功']

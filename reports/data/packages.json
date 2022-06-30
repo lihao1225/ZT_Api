@@ -1,0 +1,269 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_cases.test_api",
+    "children" : [ {
+      "name" : "成功登录",
+      "uid" : "c983c70c58a62446",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491554450,
+        "stop" : 1656491555232,
+        "duration" : 782
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '成功登录', 'request': {'method': 'post', 'base_url': '${read_config(base_url)}', 'url': '/md_user/mdLogin/getUserByMobile', 'headers': None, 'json': {'mobileNumber': '13810752514', 'password': 'ydw@123'}}, 'extract': {'access_token': '\"token\":\"(.*?)\"'}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'mobileNumber', 'password', 'assert_str'], ['成功登录', '13810752514', 'ydw@123', '成功']]}" ]
+    }, {
+      "name" : "拉取发票定时任务接口",
+      "uid" : "62a72a8b5894de90",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491555234,
+        "stop" : 1656491555692,
+        "duration" : 458
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '拉取发票定时任务接口', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/selectFphzOrder', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'assert_str'], ['拉取发票定时任务接口', '成功']]}" ]
+    }, {
+      "name" : "从erp拉取采购数据到中台接口",
+      "uid" : "8a8052da741c7d77",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491555695,
+        "stop" : 1656491556213,
+        "duration" : 518
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '从erp拉取采购数据到中台接口', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/selectPurchaseOrder', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "拉取进销数据接口",
+      "uid" : "aaf805fe39656fbb",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491556216,
+        "stop" : 1656491556457,
+        "duration" : 241
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '拉取进销数据接口', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/selectJxhzOrder', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'assert_str'], ['拉取进销数据接口', '成功']]}" ]
+    }, {
+      "name" : "拉取销售订单数据接口",
+      "uid" : "b941359574d18c13",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491556459,
+        "stop" : 1656491556703,
+        "duration" : 244
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '拉取销售订单数据接口', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/selectKphzOrder', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'assert_str'], ['拉取销售订单数据接口', '成功']]}" ]
+    }, {
+      "name" : "按照日期拉取erp采购单数据",
+      "uid" : "1446fb69c6f4c79d",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491556706,
+        "stop" : 1656491556937,
+        "duration" : 231
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '按照日期拉取erp采购单数据', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/unitPurchaseOrder', 'headers': {'Authorization': '${read_extract(access_token)}'}, 'params': {'beginDate': '2022-06-15', 'endDate': '2022-06-15'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'beginDate', 'endDate', 'assert_str'], ['按照日期拉取erp采购单数据', '2022-06-15', '2022-06-15', '成功']]}" ]
+    }, {
+      "name" : "按日拉取采购/销售出入库数据",
+      "uid" : "7f54c0d9bb0ec016",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491556939,
+        "stop" : 1656491557506,
+        "duration" : 567
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '按日拉取采购/销售出入库数据', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/unitOrderJx', 'headers': {'Authorization': '${read_extract(access_token)}'}, 'params': {'beginDate': '2022-06-27', 'endDate': '2022-06-27'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'beginDate', 'endDate', 'assert_str'], ['按日拉取采购/销售出入库数据', '2022-06-27', '2022-06-27', '成功']]}" ]
+    }, {
+      "name" : "按日期拉取销售订单数据",
+      "uid" : "70a9e453ffeb41e",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491557509,
+        "stop" : 1656491558265,
+        "duration" : 756
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '按日期拉取销售订单数据', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/unitSaleOrder', 'headers': {'Authorization': '${read_extract(access_token)}'}, 'params': {'beginDate': '2022-06-27', 'endDate': '2022-06-27'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'beginDate', 'endDate', 'assert_str'], ['按日期拉取销售订单数据', '2022-06-27', '2022-06-27', '成功']]}" ]
+    }, {
+      "name" : "按日期拉取销售订单数据",
+      "uid" : "40f5b046557bffe0",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491558268,
+        "stop" : 1656491558570,
+        "duration" : 302
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '按日期拉取销售订单数据', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_erp_stream_provider/task/centerFpV', 'headers': {'Authorization': '${read_extract(access_token)}'}, 'params': {'beginDate': '2022-06-27', 'endDate': '2022-06-27', 'status': '是'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}], 'parameterize': [['name', 'beginDate', 'endDate', 'status', 'assert_str'], ['按日期拉取销售订单数据', '2022-06-27', '2022-06-27', '是', '成功']]}" ]
+    }, {
+      "name" : "推送采购票折数据到U8C",
+      "uid" : "3854a77781170c38",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491558573,
+        "stop" : 1656491558766,
+        "duration" : 193
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送采购票折数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/sendPurchaseoZkYfd', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送采购出库数据到U8C",
+      "uid" : "a8952f5c232bf685",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491558770,
+        "stop" : 1656491559812,
+        "duration" : 1042
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送采购出库数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/sendPurchaseoOrderOutboundYfd', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送采购入库数据到U8C",
+      "uid" : "347878a26b3551b4",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491559815,
+        "stop" : 1656491561836,
+        "duration" : 2021
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送采购入库数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/sendPurchaseoOrderInboundYfd', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送销售出库X12数据到U8C",
+      "uid" : "e7eb3390082072ad",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491561839,
+        "stop" : 1656491562081,
+        "duration" : 242
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送销售出库X12数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/selSaleOutBoundX12AddU8c', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送销售入库X24数据到U8C",
+      "uid" : "d8ae124f3970f116",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491562084,
+        "stop" : 1656491562262,
+        "duration" : 178
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送销售入库X24数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/selSaleInBoundX24AddU8c', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送销售出库X31数据到U8C",
+      "uid" : "b75643f930f0ce36",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491562265,
+        "stop" : 1656491562561,
+        "duration" : 296
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送销售出库X31数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/selSaleOutBoundX31AddU8c', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送销售入库X41数据到U8C",
+      "uid" : "7739aeeaa33ffbea",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491562564,
+        "stop" : 1656491562733,
+        "duration" : 169
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送销售入库X41数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/selOrderSaleX41AddU8c', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送销售出库X12和X31凭证数据到U8C",
+      "uid" : "b3a3004d044de759",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491562736,
+        "stop" : 1656491570094,
+        "duration" : 7358
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送销售出库X12和X31凭证数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/selCareByOunBoundX12AndX31', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送销售入库X24和X41凭证数据到U8C",
+      "uid" : "ec370f176b9d1598",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491570097,
+        "stop" : 1656491570257,
+        "duration" : 160
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送销售入库X24和X41凭证数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/selCareByInBoundX41AndX24', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送销售发票数据到U8C",
+      "uid" : "5c3367bf84ddd105",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491570260,
+        "stop" : 1656491570362,
+        "duration" : 102
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送销售发票数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/saleInvoiceVoucher', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    }, {
+      "name" : "推送采购发票数据到U8C",
+      "uid" : "eb490ae24b853ea6",
+      "parentUid" : "4250abd75893d2534cfe34302f8b6923",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656491570365,
+        "stop" : 1656491570460,
+        "duration" : 95
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'name': '推送采购发票数据到U8C', 'request': {'method': 'get', 'base_url': '${read_config(base_url)}', 'url': '/md_order/order/u8c/task/purchaseInvoiceVoucher', 'headers': {'Authorization': '${read_extract(access_token)}'}}, 'validate': [{'codes': {'status_code': 200}}, {'contains': '成功'}]}" ]
+    } ],
+    "uid" : "test_cases.test_api"
+  } ]
+}
